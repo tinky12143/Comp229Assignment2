@@ -60,5 +60,5 @@ export class AuthServiceService {
         name: string;
         number: number;
         email: string;}];
-    }>('/business/contact/');
+    }>('/api/business/contact/');
   }}
