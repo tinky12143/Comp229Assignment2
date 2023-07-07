@@ -18,7 +18,7 @@ export class AuthServiceService {
 
   loginAccount(name: string, password: string) {
     this.httpClient
-      .post<{ message: string }>('/api/credential', {
+      .post<{ message: string }>('https://comp229-09c45c506537.herokuapp.com/api/login', {
         name: name,
         password: password,
       })
@@ -30,7 +30,7 @@ export class AuthServiceService {
           this.checkLogin.next(true);
           this.router.navigate(['/business-page']);
         } else {
-          this.router.navigate(['/api/credential']);
+          this.router.navigate(['/login']);
         }
       });
   }
