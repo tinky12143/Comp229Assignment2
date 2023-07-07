@@ -38,7 +38,7 @@ app.use((req, res, next) => {
 });
 
 app.get("/*", (req, res) =>
-  res.sendFile("index.html", { root: "dist/angular/" })
+  res.sendFile("index.html", { root: "./dist/angular/" })
 );
 
 module.exports = app;
