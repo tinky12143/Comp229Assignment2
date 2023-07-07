@@ -3,7 +3,7 @@ const router = express.Router();
 const Admin = require("./adminModel");
 const Business = require("./businessModel");
 
-router.post("/login", (req, res, next) => {
+router.post("/credential", (req, res, next) => {
   Admin.findOne({ name: req.body.name, password: req.body.password })
     .then((admin) => {
       if (!admin) {
