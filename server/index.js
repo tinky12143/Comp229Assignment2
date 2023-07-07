@@ -22,7 +22,7 @@ mongoose
 app.use(bodyParse.json());
 app.use(bodyParse.urlencoded({ extended: true }));
 app.use(adminRouter);
-app.use(express.static("../dist/angular"));
+app.use(express.static(__dirname + '/dist'));
 
 app.use((req, res, next) => {
   res.setHeader("Access-Control-Allow-Origin", "*");
