@@ -25,7 +25,7 @@ export class BusinessListComponent implements OnInit {
   }
 
   deleteBusiness(id: string) {
-    this.httpClient.delete('/business/contact/' + id).subscribe((res) => {
+    this.httpClient.delete('/api/business/contact/' + id).subscribe((res) => {
       const newBusiness = this.business.filter(
         (business) => business._id != id
       );

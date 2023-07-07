@@ -43,7 +43,7 @@ export class AuthServiceService {
       name: name,
     };
     this.httpClient
-      .put('/business/contact/' + id, business)
+      .put('/api/business/contact/' + id, business)
       .subscribe((res) => {
         this.router.navigate(['/business-page']);
       });
