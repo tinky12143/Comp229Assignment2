@@ -1,6 +1,7 @@
 <div *ngFor="let business of business | sortContacts">
-  <p>{{business.name}}</p>
-  <p>{{business.number}}</p>
-  <p>{{business.email}}</p>
+  <p>Name: {{business.name}}</p>
+  <p>Number: {{business.number}}</p>
+  <p>Email: {{business.email}}</p>
   <button><a [routerLink]="['/business-update', business._id]">Update</a></button>
   <button (click)="deleteBusiness(business._id)">Delete</button>
+
