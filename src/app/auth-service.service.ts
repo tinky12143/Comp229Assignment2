@@ -18,7 +18,7 @@ export class AuthServiceService {
 
   loginAccount(name: string, password: string) {
     this.httpClient
-      .post<{ message: string }>('/credential', {
+      .post<{ message: string }>('/api/credential', {
         name: name,
         password: password,
       })
@@ -30,7 +30,7 @@ export class AuthServiceService {
           this.checkLogin.next(true);
           this.router.navigate(['/business-page']);
         } else {
-          this.router.navigate(['/credential']);
+          this.router.navigate(['/api/credential']);
         }
       });
   }
