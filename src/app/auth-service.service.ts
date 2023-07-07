@@ -18,7 +18,7 @@ export class AuthServiceService {
 
   loginAccount(name: string, password: string) {
     this.httpClient
-      .post<{ message: string }>('https://comp229-09c45c506537.herokuapp.com/api/login', {
+      .post<{ message: string }>('/api/credential', {
         name: name,
         password: password,
       })
