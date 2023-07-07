@@ -21,6 +21,7 @@ mongoose
 
 app.use(bodyParse.json());
 app.use(bodyParse.urlencoded({ extended: true }));
+app.use(cors());
 app.use(adminRouter);
 app.use(express.static("./dist/angular"));
 
