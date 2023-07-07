@@ -6,7 +6,7 @@ const app = express();
 const adminRouter = require("./admin");
 
 mongoose
-  .connect("mongodb+srv://tinky12143:h1Kix1UoTya53bbd@cluster0.ixrkktj.mongodb.net/", {
+  .connect(process.env.MONGODB_URI ||"mongodb+srv://tinky12143:h1Kix1UoTya53bbd@cluster0.ixrkktj.mongodb.net/", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
