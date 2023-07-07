@@ -22,7 +22,7 @@ mongoose
 app.use(bodyParse.json());
 app.use(bodyParse.urlencoded({ extended: true }));
 app.use(adminRouter);
-app.use(express.static(__dirname + '/dist'));
+app.use(express.static("./dist/angular"));
 
 app.use((req, res, next) => {
   res.setHeader("Access-Control-Allow-Origin", "*");
@@ -38,13 +38,7 @@ app.use((req, res, next) => {
 });
 
 app.get("/*", (req, res) =>
-  res.sendFile("index.html", { root: "dist/angular" })
+  res.sendFile("index.html", { root: "dist/angular/" })
 );
 
-app.set("port", port);
-
-const server = http.createServer(app);
-
-server.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
-});
+module.exports = app;
