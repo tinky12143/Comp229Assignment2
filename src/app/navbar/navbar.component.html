@@ -1,0 +1,15 @@
+<img src="assets/images/banner.png" height="180px">
+<br>
+<!-- Navigation bar -->
+<table>
+  <tr>
+    <!-- Navigation Links -->
+    <td><a routerLink="/">Home</a></td>
+    <td><a routerLink="/about">About me</a></td>
+    <td><a routerLink="/projects">Projects</a></td>
+    <td><a routerLink="/services">Services</a></td>
+    <td><a routerLink="/contact">Contact Me</a></td>
+    <td *ngIf="!login"><a routerLink="/login">Login</a></td>
+    <td *ngIf="login"><a routerLink="/business">Business List</a></td>
+  </tr>
+</table>

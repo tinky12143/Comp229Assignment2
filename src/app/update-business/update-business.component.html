@@ -1,0 +1,9 @@
+<form #form="ngForm">
+  <div>
+    <input type="text" name="name" ngModel #name="ngModel" required>
+    <input type="number" name="number" ngModel #number="ngModel" required>
+    <input type="email" name="email" ngModel email #email="ngModel" required>
+  </div>
+  <div>
+    <button type="submit" (click)="update()">Update</button>
+    <button (click)="cancel()">Cancel</button>

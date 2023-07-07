@@ -1,0 +1,23 @@
+<!-- 
+  File name: about.component.html
+  Student’s Name: Lok Yan Lee
+  StudentID: 301233707
+  Date: 12 Jun 2023
+-->
+<!-- Navigation bar section -->
+<app-navbar></app-navbar>
+<!-- Projects section -->
+<div>
+    <h3>Projects</h3>
+    <table>
+      <tr *ngFor="let project of projects">
+        <td><img [src]="project.imageUrl" height="150px"></td>
+        <td>
+        <!-- Project Description -->
+        <strong><a [href]="project.link">{{ project.link }}</a></strong><br>
+        {{ project.description }}
+        </td>
+      </tr>
+    </table>
+  </div>
+  

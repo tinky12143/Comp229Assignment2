@@ -1,0 +1,21 @@
+<!-- 
+  File name: about.component.html
+  Student’s Name: Lok Yan Lee
+  StudentID: 301233707
+  Date: 12 Jun 2023
+-->
+<!-- Navigation bar section -->
+<app-navbar></app-navbar>
+<!-- Welcome message and mission -->
+<div>
+    <!-- Welcome message -->
+    <p>Welcome everyone to my portfolio. <br> <br>
+    You can <strong><a routerLink="/about">click here</a></strong> to know more about me.</p>
+    <br><br><br>
+    <!-- Mission -->
+    <strong>Mission</strong> <br>
+    <ol>
+      <li *ngFor="let missionItem of mission">{{ missionItem }}</li>
+    </ol>
+  </div>
+  

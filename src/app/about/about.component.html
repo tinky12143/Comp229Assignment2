@@ -1,0 +1,23 @@
+<!-- 
+  File name: about.component.html
+  Student’s Name: Lok Yan Lee
+  StudentID: 301233707
+  Date: 12 Jun 2023
+-->
+<!-- Navigation bar section -->
+<app-navbar></app-navbar>
+<div>
+    <!-- Header section -->
+    <header>
+      <h3>Student name: {{ name }} Student # {{ studentNumber }}</h3>
+    </header>
+    <main>
+    <!-- Main content section -->
+      <p><i>{{ background }}</i></p>
+      <h4>Some of my favourite things to do:</h4>
+      <ul>
+        <li *ngFor="let thing of favouriteThings">{{ thing }}</li>
+      </ul>
+    </main>
+  </div>
+  

@@ -1,0 +1,75 @@
+/*File name: Angular
+ Student’s Name: Lok Yan Lee
+ StudentID:301233707
+ Date:12 Jun 2023*/
+ 
+/* Default Body Styling */
+body {
+    background-color: #f4e6ff; /* Light purple */
+    color: #543864; /* Dark purple */
+    font-family: 'Comic Sans MS', sans-serif;
+  }
+  
+  /* Banner Image */
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50px;
+  }
+  
+  /* Navigation Bar */
+  table {
+    width: 100%;
+    background-color: #d6bff7; /* Medium purple */
+    padding: 20px 0;
+    border-radius: 30px;
+  }
+  
+  table td {
+    text-align: center;
+  }
+  
+  table a {
+    color: #543864; /* Dark purple */
+    text-decoration: none;
+  }
+  
+  /* Navigation Links hover effect */
+  table a:hover {
+    color: #FFB7D5; /* Light pink */
+    text-decoration: underline;
+  }
+  
+  /* Projects Section */
+  div {
+    padding: 20px;
+    margin: 10px;
+    background-color: #FFFFFF; /* White */
+    border-radius: 30px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  h3 {
+    color: #543864; /* Dark purple */
+    text-align: center;
+  }
+  
+  /* Project Images */
+  div td img {
+    border-radius: 30px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Project Links */
+  div td a {
+    color: #543864; /* Dark purple */
+    text-decoration: none;
+  }
+  
+  /* Project Links hover effect */
+  div td a:hover {
+    color: #FFB7D5; /* Light pink */
+    text-decoration: underline;
+  }
+  

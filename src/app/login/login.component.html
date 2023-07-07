@@ -1,0 +1,13 @@
+<div>
+  <form #form="ngForm">
+    <div class="col-md-6 d-flex flex-column justify-content-between" style="height: 200px;">
+      <input type="text" name="name" placeholder="Name" ngModel required>
+
+      <input type="password" name="password" placeholder="Password" ngModel required>
+
+    </div>
+    <div>
+      <button type="submit" (click)="loginAccount(form)">Login</button>
+    </div>
+  </form>
+</div>
