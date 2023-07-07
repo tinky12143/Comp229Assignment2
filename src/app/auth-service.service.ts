@@ -50,10 +50,15 @@ export class AuthServiceService {
   }
 
   getBusiness(): Observable<{
-    businessContact: any[];
+    businessContact: [{_id: string;
+      name: string;
+      number: number;
+      email: string;}]
   }> {
     return this.httpClient.get<{
-      businessContact: any[];
+      businessContact: [{_id: string;
+        name: string;
+        number: number;
+        email: string;}];
     }>('/business/contact/');
-  }
-}
+  }}
