@@ -1,10 +1,8 @@
 const express = require("express");
-
+const cors = require("cors");
 const bodyParse = require("body-parser");
 const mongoose = require("mongoose");
 const app = express();
-const http = require("http");
-const port = process.env.PORT || 3000;
 const adminRouter = require("./admin");
 
 mongoose
